@@ -39,7 +39,7 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species'
 # As for differentiating between Iris-versicolor and Iris-virginica, they can be seperated on the basis of: Petal Length and Petal Width.
 # In the plot between petal width verses petal length, the petal width and length of versicolor is smaller than that of virginica.
 
-#3D scattered plot.
+# 3D scattered plot - it works
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 
