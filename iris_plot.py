@@ -15,13 +15,13 @@ import seaborn as sns
 data = pd.read_csv("iris_original.csv")
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']
 
-# matrix plot - scattered - it works
+# matrix plot - scattered - it works -> DONE
 # scatter_matrix(data)
 # plt.show()
 
 # https://www.kaggle.com/anthonyhills/classifying-species-of-iris-flowers
 # https://www.kaggle.com/farheen28/iris-dataset-analysis-using-knn
-# - it works
+# - it works -> DONE
 # sns.FacetGrid(data, hue="species", height=10).map(plt.scatter, "sepal_length", "sepal_width").add_legend() 
 
 # plt.show()
@@ -29,7 +29,7 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species'
 # From above scattered plot, we can distinctly distinguish Iris-setosa, but Iris-versicolor and Iris-verginica can't be distinguished based on thier sepal width and sepal length. 
 # Thus to distinguish between versicolor and verginica, we have to analyse some other features.
 
-# Here, we can use pairwise plotting - it works
+# Here, we can use pairwise plotting - it works -> DONE
 
 # sns.pairplot(data, size=3, diag_kind="kde")
 
@@ -39,7 +39,7 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species'
 # As for differentiating between Iris-versicolor and Iris-virginica, they can be seperated on the basis of: Petal Length and Petal Width.
 # In the plot between petal width verses petal length, the petal width and length of versicolor is smaller than that of virginica.
 
-# 3D scattered plot - it works
+# 3D scattered plot - it works -> DONE
 # from mpl_toolkits.mplot3d import Axes3D
 # import matplotlib.pyplot as plt
 
@@ -61,7 +61,7 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species'
 # plt.show()
 
 # These are some parametric and non parametric statistics of our dataset. Parametric: mean, std, min, max, count. Non Parametric: 25%, 50%, 75%
-# print(data.describe()) - this works
+# print(data.describe()) - it works -> DONE
 
 # 1D plot of SepalLength - it works
 # import numpy as np

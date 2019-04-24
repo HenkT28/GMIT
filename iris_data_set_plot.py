@@ -2,7 +2,6 @@
 # Iris Data Set - plotting iris data set
 
 # https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
-# https://www.kaggle.com/jchen2186/machine-learning-with-iris-dataset
 # https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 
 # Importing Package 
@@ -22,16 +21,16 @@ data = pandas.read_csv("iris_original.csv")
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']
 
 # Printing DataFrame -only first 20 rows to understand what data look like
-# print(data.head(20)) - works!
+# print(data.head(20)) - works -> DONE
 
 # Peek at the data
 # Data have 5 Columns - first four are features and fifth is Classfication of the Iris type
-# print (data.head()) - works!
+# print (data.head()) - works -> DONE
 
 # Find out no of rows for each Species.
-# print(data.groupby('species').size())  - works!
+# print(data.groupby('species').size()) - works -> DONE
 
-# Create 3 DataFrame for each Species  - works!
+# Create 3 DataFrame for each Species - works -> DONE
 
 # setosa=data[data['species']=='setosa']
 # versicolor =data[data['species']=='versicolor']
@@ -43,11 +42,11 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species'
 
 # The count tells that all the 4 features have 150 rows
 # In general ,From Mean we can say that sepal is larger than petal.
-# print(data.describe()) - works!
+# print(data.describe()) - works -> DONE
 
 # Plotting Petal Length vs Petal Width & Sepal Length vs Sepal width
 # Warnings.simplefilter("ignore")
-# #Supress any warning - works!
+# #Supress any warning - works -> DONE
 # plt.figure()
 # fig,ax=plt.subplots(1,2,figsize=(17, 9))
 # data.plot(x="sepal_length",y="sepal_width",kind="scatter",ax=ax[0],sharex=False,sharey=False,label="sepal",color='r')
@@ -62,7 +61,7 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species'
 # We can see that  there are some petals which are smaller than rest of petal.
 # Let's examine them.
 
-# For each Species, let's check what is petal and sepal distibution - it works!
+# For each Species, let's check what is petal and sepal distibution - works -> DONE
 # setosa=data[data['species']=='setosa']
 # versicolor =data[data['species']=='versicolor']
 # virginica =data[data['species']=='virginica']
